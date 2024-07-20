@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div .background-img {
+  background-image: url("./Assests/back.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+
+div .left-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 150px;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  z-index: 2;
+  box-shadow: 0 0.3px 0.7px rgba(0, 0, 0, 0.126),
+    0 0.9px 1.7px rgba(0, 0, 0, 0.179), 0 1.8px 3.5px rgba(0, 0, 0, 0.224),
+    0 3.7px 7.3px rgba(0, 0, 0, 0.277), 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.nav .logo img {
+  width: 25px;
+}
+
+.nav .left-contents a {
+  text-decoration: none;
+  display: flex;
+  color: white;
+}
+
+.left-container .nav {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 90vh;
+}
+
+.nav .left-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+div .bottom-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 0.3px 0.7px rgba(0, 0, 0, 0.126),
+    0 0.9px 1.7px rgba(0, 0, 0, 0.179), 0 1.8px 3.5px rgba(0, 0, 0, 0.224),
+    0 3.7px 7.3px rgba(0, 0, 0, 0.277), 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: 0.5s ease;
+  z-index: 2;
+  backdrop-filter: blur(9px);
+}
+
+div .bottom-top {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 20px);
+  height: 20px;
+  margin: 10px 10px 0px 10px;
+}
+
+div .progressbar {
+  border-radius: 35px 0px 0px 35px;
+  margin-top: 8px;
+  width: 100%;
+  height: 5px;
+  background-color: #cccccc;
+  cursor: pointer;
+}
+
+div .control-bar {
+  position: absolute;
+  height: 5px;
+  width: 0%;
+  background-color: white;
+}
+
+div .player-position {
+  width: 0px;
+  height: 0px;
+  background-color: white;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+div .end-timer {
+  padding-left: 10px;
+  color: white;
+  cursor: default;
+}
+
+div .bottom-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+div .song-info {
+  padding-top: 8px;
+  padding-left: 10px;
+  width: 50%;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: default;
+  text-overflow: ellipsis;
+}
+
+div .music-control {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+div .music-control-center {
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.fa-solid {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+div .secondary-control {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
